@@ -12,7 +12,7 @@ public class ReadFile {
 
     public static void main(String[] args) throws Exception {
         // TODO Auto-generated method stub
-        System.out.println("Initialisation...");
+        System.out.println("Version:v0.1.0"  +"\n"+ "Initialisation...");
 
         BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt")); //lecture du fichier symptoms.txt
         String line = reader.readLine(); //insertion du contenu du fichier symptoms.txt dans la variable line
@@ -30,7 +30,7 @@ public class ReadFile {
         }
 
         /* *Petit test de vérification pour confirmer que les données ont bien été lues* */
-        System.out.println("ma Liste contient: "+myliste.size()+" de données.");
+        System.out.println("ma Liste contient: "+myliste.size()+" éléments.");
         System.out.println("les symptômes sont au nombre de: "+symptomes.size()+" au total!!!");
 
         /* *On crée un second fichier qui va contenir uniquement les symptomes ça nous sera utile pour la suite* */
